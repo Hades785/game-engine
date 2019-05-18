@@ -32,7 +32,7 @@ public:
 
     static Texture2D getTexture(std::string name);
 
-    // free resources
+    // free assets
     static void clear();
 
 private:

@@ -20,8 +20,8 @@ Game::~Game() {
 
 void Game::init() {
     ResourceManager::loadShader("sprite",
-                                "../resources/vertexShader.glsl",
-                                "../resources/fragmentShader.glsl");
+                                "../assets/vertexShader.glsl",
+                                "../assets/fragmentShader.glsl");
 
     // (0;0) top left | (width;height) bottom right
     glm::mat4 projection = glm::ortho(0.f, static_cast<GLfloat>(this->width),
@@ -39,7 +39,7 @@ void Game::init() {
 
     renderer = new SpriteRenderer(shader);
 
-    ResourceManager::loadTexture("tex1", "../resources/img.png", GL_TRUE);
+    ResourceManager::loadTexture("tex1", "../assets/img.png", GL_TRUE);
 }
 
 void Game::processInput(sf::Time dt) {

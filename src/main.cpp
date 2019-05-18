@@ -100,7 +100,7 @@ int main() {
         window.display();
     }
 
-    // Freeing OpenGL resources
+    // Freeing OpenGL assets
     ResourceManager::clear();
 
     window.close();
