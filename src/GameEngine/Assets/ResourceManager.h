@@ -10,8 +10,8 @@
 
 #include <GL/glew.h>
 
-#include "Shader.h"
-#include "Texture2D.h"
+#include "GameEngine/Assets/Shaders/Shader.h"
+#include "GameEngine/Assets/Sprites/Texture2D.h"
 
 class ResourceManager {
 public:
