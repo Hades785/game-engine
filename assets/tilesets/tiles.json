@@ -1,0 +1,19 @@
+{
+  "test-tileset": {
+    "sheet": "test-tileset.png",
+    "sheet-width": 32,
+    "sheet-height": 16,
+    "tile-width": 16,
+    "tile-height": 16,
+    "tiles": [
+      {
+        "id": 1,
+        "name": "test-grass"
+      },
+      {
+        "id": 2,
+        "name": "test-dirt"
+      }
+    ]
+  }
+}
