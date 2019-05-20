@@ -9,8 +9,8 @@
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 
-#include "Shader.h"
-#include "GameEngine/Assets/Sprites/Texture2D.h"
+#include "../Shaders/Shader.h"
+#include "Texture2D.h"
 
 class SpriteRenderer {
 public:
