@@ -3,8 +3,8 @@
 //
 
 #include "Game.h"
-#include "ResourceManager.h"
-#include "SpriteRenderer.h"
+#include "GameEngine/Assets/ResourceManager.h"
+#include "GameEngine/Assets/Sprites/SpriteRenderer.h"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
@@ -20,8 +20,8 @@ Game::~Game() {
 
 void Game::init() {
     ResourceManager::loadShader("sprite",
-                                "../assets/vertexShader.glsl",
-                                "../assets/fragmentShader.glsl");
+                                "../assets/shaders/vertexShader.glsl",
+                                "../assets/shaders/fragmentShader.glsl");
 
     // (0;0) top left | (width;height) bottom right
     glm::mat4 projection = glm::ortho(0.f, static_cast<GLfloat>(this->width),

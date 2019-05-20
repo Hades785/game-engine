@@ -11,7 +11,7 @@
 #include <iostream>
 
 #include "Game.h"
-#include "ResourceManager.h"
+#include "GameEngine/Assets/ResourceManager.h"
 
 
 // Window width and height
